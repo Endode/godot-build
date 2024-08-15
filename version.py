@@ -4,6 +4,7 @@ major = 4
 minor = 3
 patch = 1
 build = "endode_custom_build"
+status = "stable"
 module_config = ""
 year = 2024
 website = "https://godotengine.org"
