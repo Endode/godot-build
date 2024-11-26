@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "Building Docker container"
+docker build -t godot-build .
+if ! [ $? == 0 ]; then
+	exit
+fi
+echo "Running Docker container"
+docker run --rm -v $(pwd):$(pwd) -w $(pwd) godot-build
+# echo "Removing Docker container"
+# docker image rm godot-build
