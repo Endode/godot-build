@@ -6,5 +6,5 @@ if ! [ $? == 0 ]; then
 fi
 echo "Running Docker container"
 docker run --rm -v $(pwd):$(pwd) -w $(pwd) godot-build
-# echo "Removing Docker container"
-# docker image rm godot-build
+echo "Removing Docker container"
+docker image rm godot-build
