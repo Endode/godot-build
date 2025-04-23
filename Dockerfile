@@ -16,7 +16,8 @@ RUN dnf install -y \
   libudev-devel \
   gcc-c++ \
   libstdc++-static \
-  libatomic-static
+  libatomic-static \
+  clang
 # RUN pip3 install scons
 # RUN pip3 install --upgrade scons
 COPY ./endode_docker_build_linux_template.sh /tmp/endode_docker_build_linux_template.sh
