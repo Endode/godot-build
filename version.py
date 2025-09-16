@@ -1,10 +1,9 @@
 short_name = "godot"
 name = "Godot Engine | Endode Build"
 major = 4
-minor = 4
-patch = 1
+minor = 5
+patch = 0
 status = "stable"
 module_config = ""
-year = 2024
 website = "https://godotengine.org"
-docs = "4.4"
+docs = "4.5"
