@@ -7,5 +7,5 @@
 export SCRIPT_AES256_ENCRYPTION_KEY=$(cat /tmp/key.gdkey)
 # FIXME: Uncommented this line and remove the other one, I have LTO DISABLED for right now because I am testing this
 # scons platform=linuxbsd target=template_release arch=arm64 production=yes use_lto=yes lto=thin use_llvm=yes d3d12=no
-scons platform=linuxbsd target=template_release arch=arm64 production=yes use_lto=no lto=none use_llvm=yes d3d12=no
+scons platform=linuxbsd target=template_release arch=arm64 production=yes use_lto=yes lto=thin use_llvm=yes d3d12=no
 # mv bin/godot.linuxbsd.template_release.x86_64.llvm.mono bin/godot.linuxbsd.template_release.x86_64 -f
