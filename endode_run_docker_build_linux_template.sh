@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Building Docker container"
-docker build -t godot-build .
+docker build -t godot-build . -f Dockerfile
 if ! [ $? -eq 0 ]; then
 	echo "The docker container failed in some way :("
 	exit

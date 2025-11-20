@@ -1,0 +1,26 @@
+FROM --platform=linux/arm64 fedora:35
+# RUN dnf update && dnf install -y \
+RUN dnf install -y \
+  scons \
+  pkgconfig \
+  libX11-devel \
+  libXcursor-devel \
+  libXrandr-devel \
+  libXinerama-devel \
+  libXi-devel \
+  wayland-devel \
+  mesa-libGL-devel \
+  mesa-libGLU-devel \
+  alsa-lib-devel \
+  pulseaudio-libs-devel \
+  libudev-devel \
+  gcc-c++ \
+  libstdc++-static \
+  libatomic-static \
+  clang
+# RUN pip3 install scons
+# RUN pip3 install --upgrade scons
+COPY ./endode_docker_build_linux_arm64_template.sh /tmp/endode_docker_build_linux_arm64_template.sh
+COPY ./key.gdkey /tmp/key.gdkey
+ENV PYTHON=python3
+CMD /tmp/endode_docker_build_linux_arm64_template.sh
