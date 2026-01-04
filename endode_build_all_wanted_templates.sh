@@ -17,7 +17,7 @@ echo "Finished Linux template via Docker"
 echo "We do not build the Linux ARM64 template here"
 
 echo "Building Linux editor"
-./endode_build_linux_editor.sh
+sudo ./endode_build_linux_editor.sh
 echo "Finished Linux editor"
 
 # echo "Building Android template"
