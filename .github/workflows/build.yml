@@ -1,0 +1,39 @@
+name: Build ARM64 Linux
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04-arm
+    container:
+      image: ubuntu:22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: |
+          apt-get update
+          apt-get install -y \
+          build-essential \
+          clang \
+          scons \
+          pkg-config \
+          libx11-dev \
+          libxcursor-dev \
+          libxinerama-dev \
+          libgl1-mesa-dev \
+          libglu1-mesa-dev \
+          libasound2-dev \
+          libpulse-dev \
+          libudev-dev \
+          libxi-dev \
+          libxrandr-dev \
+          libwayland-dev
+      - name: Build Godot
+        env:
+          SCRIPT_AES256_ENCRYPTION_KEY: ${{ secrets.ENDODE_GD_ENCRYPTION_KEY }}
+        run: |
+          scons platform=linuxbsd target=template_release arch=arm64 production=yes use_lto=yes lto=thin use_llvm=yes d3d12=no
+      - name: Upload Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: godot-linux-arm64-template
+          path: bin/godot*arm64*
