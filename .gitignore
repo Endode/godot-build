@@ -393,3 +393,4 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 *.generated.props
+.direnv
