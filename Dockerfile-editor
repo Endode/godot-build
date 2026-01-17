@@ -1,0 +1,26 @@
+FROM fedora:40
+# RUN dnf update && dnf install -y \
+RUN dnf install -y \
+  scons \
+  pkgconfig \
+  libX11-devel \
+  libXcursor-devel \
+  libXrandr-devel \
+  libXinerama-devel \
+  libXi-devel \
+  wayland-devel \
+  mesa-libGL-devel \
+  mesa-libGLU-devel \
+  alsa-lib-devel \
+  pulseaudio-libs-devel \
+  libudev-devel \
+  gcc-c++ \
+  libstdc++-static \
+  libatomic-static \
+  gettext \
+  dotnet-sdk-8.0
+  # clang
+COPY ./endode_docker_build_linux_editor.sh /tmp/endode_docker_build_linux_editor.sh
+COPY ./key.gdkey /tmp/key.gdkey
+ENV PYTHON=python3
+CMD /tmp/endode_docker_build_linux_editor.sh
