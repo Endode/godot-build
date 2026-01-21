@@ -1,23 +1,23 @@
-FROM fedora:35
-# RUN dnf update && dnf install -y \
-RUN dnf install -y \
+FROM registry.gitlab.steamos.cloud/steamrt/sniper/sdk:latest
+RUN apt-get update && apt-get install -y --no-install-recommends \
   scons \
-  pkgconfig \
-  libX11-devel \
-  libXcursor-devel \
-  libXrandr-devel \
-  libXinerama-devel \
-  libXi-devel \
-  wayland-devel \
-  mesa-libGL-devel \
-  mesa-libGLU-devel \
-  alsa-lib-devel \
-  pulseaudio-libs-devel \
-  libudev-devel \
-  gcc-c++ \
-  libstdc++-static \
-  libatomic-static \
-  clang
+  pkg-config \
+  libx11-dev \
+  libxcursor-dev \
+  libxrandr-dev \
+  libxinerama-dev \
+  libxi-dev \
+  libwayland-dev \
+  libgl1-mesa-dev \
+  libglu1-mesa-dev \
+  libasound2-dev \
+  libpulse-dev \
+  libudev-dev \
+  g++ \
+  libstdc++-10-dev \
+  gcc-10-plugin-dev \
+  clang \
+  build-essential
 # RUN pip3 install scons
 # RUN pip3 install --upgrade scons
 COPY ./endode_docker_build_linux_template.sh /tmp/endode_docker_build_linux_template.sh
