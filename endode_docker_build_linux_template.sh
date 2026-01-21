@@ -4,6 +4,10 @@ if ! [ -f /.dockerenv ]; then
     exit
 fi
 
+export AR=llvm-ar
+export NM=llvm-nm
+export RANLIB=llvm-ranlib
+
 export SCRIPT_AES256_ENCRYPTION_KEY=$(cat /tmp/key.gdkey)
 scons platform=linuxbsd target=template_release production=yes use_lto=yes lto=thin use_llvm=yes d3d12=no AR=llvm-ar RANLIB=llvm-ranlib LINKFLAGS="-fuse-ld=lld" use_lld=yes
 mv bin/godot.linuxbsd.template_release.x86_64.llvm.mono bin/godot.linuxbsd.template_release.x86_64 -f
