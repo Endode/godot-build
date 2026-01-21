@@ -23,4 +23,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY ./endode_docker_build_linux_template.sh /tmp/endode_docker_build_linux_template.sh
 COPY ./key.gdkey /tmp/key.gdkey
 ENV PYTHON=python3
+RUN git config --global --add safe.directory '*'
 CMD /tmp/endode_docker_build_linux_template.sh
