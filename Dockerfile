@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libstdc++-10-dev \
   gcc-10-plugin-dev \
   clang \
+  lld \
+  llvm \
   build-essential
 # RUN pip3 install scons
 # RUN pip3 install --upgrade scons
