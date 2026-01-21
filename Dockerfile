@@ -26,4 +26,12 @@ COPY ./endode_docker_build_linux_template.sh /tmp/endode_docker_build_linux_temp
 COPY ./key.gdkey /tmp/key.gdkey
 ENV PYTHON=python3
 RUN git config --global --add safe.directory '*'
+RUN mkdir -p /opt/llvm-bin && \
+    ln -s /usr/bin/clang /opt/llvm-bin/gcc && \
+    ln -s /usr/bin/clang++ /opt/llvm-bin/g++ && \
+    ln -s /usr/bin/lld /opt/llvm-bin/ld && \
+    ln -s /usr/bin/llvm-ar /opt/llvm-bin/ar && \
+    ln -s /usr/bin/llvm-ranlib /opt/llvm-bin/ranlib && \
+    ln -s /usr/bin/llvm-nm /opt/llvm-bin/nm
+ENV PATH="/opt/llvm-bin:${PATH}"
 CMD /tmp/endode_docker_build_linux_template.sh
