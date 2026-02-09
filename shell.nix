@@ -16,14 +16,14 @@ pkgs.mkShell {
   ];
 
   buildInputs = with pkgs; [
-    xorg.libX11
-    xorg.libXcursor
-    xorg.libXinerama
-    xorg.libXi
-    xorg.libXrandr
-    xorg.libXrender
-    xorg.libXfixes
-    xorg.libXext
+    libx11
+    libxcursor
+    libxinerama
+    libxi
+    libxrandr
+    libxrender
+    libxfixes
+    libxext
 
     wayland
     wayland-protocols
