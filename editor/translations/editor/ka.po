@@ -6,14 +6,14 @@
 # George Dzavashvili <dzavashviligeorge@gmail.com>, 2018.
 # დემეტრე შონია <blender.animation.maker@gmail.com>, 2019.
 # Rati Nikolaishvili <rati.nikolaishvili@gmail.com>, 2019.
-# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023, 2024, 2025.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023, 2024, 2025, 2026.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-30 13:39+0000\n"
+"PO-Revision-Date: 2026-02-13 12:54+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/godot-engine/"
 "godot/ka/>\n"
@@ -22,13 +22,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 msgid "OK"
 msgstr "დიახ"
 
+msgid "Failed"
+msgstr "ჩავარდა"
+
+msgid "Unavailable"
+msgstr "მიუწვდომელია"
+
+msgid "Parameter out of range"
+msgstr "პარამეტრი შუალედს გარეთაა"
+
+msgid "Out of memory"
+msgstr "მეხსიერება ამოიწურა"
+
+msgid "File not found"
+msgstr "ფაილი აღმოჩენილი არაა"
+
+msgid "File already in use"
+msgstr "ფაილი უკვე გამოიყენება"
+
+msgid "Can't open file"
+msgstr "ფაილის გახსნა შეუძლებელია"
+
+msgid "Can't write file"
+msgstr "ფაილის ჩაწერის შეცდომა"
+
+msgid "Can't read file"
+msgstr "ფაილის წაკითხვის შეცდომა"
+
+msgid "Missing dependencies for file"
+msgstr "ნაკლული დამოკიდებულებები ფაილისთვის"
+
 msgid "Locked"
 msgstr "დაბლოკილი"
+
+msgid "Timeout"
+msgstr "მოლოდინის ვადა"
+
+msgid "Already exists"
+msgstr "უკვე არსებობს"
+
+msgid "Method not found"
+msgstr "მეთოდი აღმოჩენილი არაა"
+
+msgid "Script failed"
+msgstr "სკრიპტის ჩავარდა"
+
+msgid "Invalid declaration"
+msgstr "არასწორი დეკლარაცია"
+
+msgid "Parse error"
+msgstr "დამუშავების შეცდომა"
 
 msgid "Help"
 msgstr "დახმარება"
@@ -564,6 +612,9 @@ msgstr "სიღრმე"
 msgid "Close"
 msgstr "დახურვა"
 
+msgid "Reconnect Transition"
+msgstr "თავიდან დაკავშირების გადასვლა"
+
 msgid "Transition exists!"
 msgstr "გარდასვლა არსებობს!"
 
@@ -1091,6 +1142,9 @@ msgstr "ყველაფრის/არაფრის მონიშვნ�
 
 msgid "Copy Selection"
 msgstr "მონიშნულის კოპირება"
+
+msgid "Imported Animation cannot be edited!"
+msgstr "შემოტანილი ანიმაციის ჩასწორება შეუძლებელია!"
 
 msgid "Animation Change Keyframe Time"
 msgstr "ანიმაციის საკვანძო კადრის დროის ცვლილება"
@@ -1814,6 +1868,11 @@ msgstr "საქაღალდის შექმნა"
 msgid "Could not create folder: %s"
 msgstr "ვერ შევქმენი საქაღალდე: %s"
 
+msgid "Copy %d selected item to \"%s\"?"
+msgid_plural "Copy %d selected items to \"%s\"?"
+msgstr[0] "დაკოპირდეს %d მონიშნული ელემენტი \"%s\"-ში?"
+msgstr[1] "დაკოპირდეს %d მონიშნული ელემენტი \"%s\"-ში?"
+
 msgid "Open Scene"
 msgstr "სცენის გახსნა"
 
@@ -2245,6 +2304,9 @@ msgstr "შეცდომის პატაკი"
 msgid "Project"
 msgstr "პროექტი"
 
+msgid "Renderer"
+msgstr "რენდერერი"
+
 msgid "Update Continuously"
 msgstr "უწყვეტი განახლება"
 
@@ -2428,6 +2490,9 @@ msgstr "ყველაფრის გატანა"
 msgid "Project Export"
 msgstr "პროექტის გატანა"
 
+msgid "Search Replacement For: %s"
+msgstr "ჩანაცვლების ძებნა რისთვის: %s"
+
 msgid "Dependencies For:"
 msgstr "დამოკიდებულება:"
 
@@ -2472,6 +2537,9 @@ msgstr "წაშლის შეცდომა:"
 
 msgid "Files to be deleted:"
 msgstr "წაიშლება ფაილები:"
+
+msgid "Error loading: %s"
+msgstr "ჩატვირთვის შეცდომა: %s"
 
 msgid "Fix Dependencies"
 msgstr "დამოკიდებულებების გასწორება"
@@ -2694,6 +2762,9 @@ msgstr "ანიმაციის შენახვის ბილიკე�
 
 msgid "Meshes"
 msgstr "ბადეები"
+
+msgid "Materials"
+msgstr "მასალები"
 
 msgid "Status"
 msgstr "სტატუსი"
@@ -3039,6 +3110,9 @@ msgstr "შეყვანა"
 
 msgid "Override the in-game camera."
 msgstr "თამაშის კამერის გადაფარვა."
+
+msgid "Fixed Size"
+msgstr "ფიქსირებული ზომა"
 
 msgid "Game"
 msgstr "თამაში"
@@ -3469,6 +3543,12 @@ msgstr "პერსპექტივა"
 msgid "Grouped"
 msgstr "დაჯგუფებული"
 
+msgid "Objects: %d"
+msgstr "ობიექტები: %d"
+
+msgid "Primitives: %d"
+msgstr "პრიმიტივები: %d"
+
 msgid "Translating:"
 msgstr "გადატანა:"
 
@@ -3576,6 +3656,9 @@ msgstr "ტრასფორმირება"
 
 msgid "Snap Settings"
 msgstr "მიბმის მორგება"
+
+msgid "Rotate Snap:"
+msgstr "მიმაგრების შებრუნება:"
 
 msgid "Perspective VFOV (deg.):"
 msgstr "პერსპექტივის VFOV (გრად.):"
@@ -4673,6 +4756,9 @@ msgstr "მიმდინარედ დანიშვნა"
 msgid "Extra Options:"
 msgstr "დამატებითი პარამეტრები:"
 
+msgid "Select Existing Layout:"
+msgstr "არსებული განლაგების არჩევა:"
+
 msgid "New layout name"
 msgstr "ახალი განლაგების სახელი"
 
@@ -5163,6 +5249,9 @@ msgstr "გაერთიანებული"
 msgid "Cannot instantiate GDScript class."
 msgstr "GDScript-ს კლასის ინსტანცირება შეუძლებელია."
 
+msgid "Export Settings"
+msgstr "პარამეტრების გატანა"
+
 msgid "glTF 2.0 Scene..."
 msgstr "glTF 2.0 სცენა..."
 
@@ -5260,6 +5349,18 @@ msgstr "NavigationPolygon-ის შექმნა"
 
 msgid "Baking NavigationMesh ..."
 msgstr "NavigationMesh-ის გამოცხობა..."
+
+msgid "Total Refs"
+msgstr "მიმართვები სულ"
+
+msgid "Total References: %d"
+msgstr "სულ მიმართვები: %d"
+
+msgid "Duplicate?"
+msgstr "დავადუბლირო?"
+
+msgid "Generating Snapshot"
+msgstr "სწრაფი ასლის გენერაცია"
 
 msgid "Rename Action"
 msgstr "ქმედების სახელის გადარქმევა"

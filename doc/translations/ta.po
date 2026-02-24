@@ -155216,9 +155216,6 @@ msgstr ""
 "இந்த மதிப்பை அதிகரிப்பது இதன் விளைவாக உருவகப்படுத்துதலை மேம்படுத்தும், ஆனால் செயல்திறனை "
 "பாதிக்கும். கவனத்துடன் பயன்படுத்தவும்."
 
-msgid "The SoftBody3D's mass."
-msgstr "சாப்ட் பாடி 3 டி வெகுசன."
-
 msgid ""
 "When [member Node.process_mode] is set to [constant "
 "Node.PROCESS_MODE_DISABLED], remove from the physics simulation to stop all "
