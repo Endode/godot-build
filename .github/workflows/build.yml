@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04-arm
     container:
-      image: ubuntu:22.04
+      image: registry.gitlab.steamos.cloud/steamrt/sniper/sdk/arm64:latest
     steps:
       - uses: actions/checkout@v4
       - name: Install deps
